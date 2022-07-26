@@ -1,0 +1,276 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+.container{
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.burger{
+    width: 5vh;
+    border-radius: 4vh;
+    height: 1vh;
+    background-color: black;
+    margin-top: 1vh;
+  }
+
+  .navbar{
+      grid-area: navbar;
+      background-color: white;
+      height: 10vh;
+      grid-area: navbar;
+  }
+
+.sidebar{
+    position: fixed;
+    left: -50vh;
+    width: 50vh;
+    height: 100%;
+    background-color: black;
+    transition: all .5s;
+}
+
+.sidebar header{
+    color: white;
+    text-align: center;
+    user-select: none;
+    font-size: 8vh;
+    background-color: #ffd700;
+}
+
+.sidebar ul a{
+    display: block;
+    font-size: 5vh;
+    padding-top: 4vh;
+    padding-left: 1vh;
+    color: white;
+    border-top: white;
+    transition: .5s;
+}
+
+ul li:hover{
+    padding-left: 2vh;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 4vh;
+}
+label #btn{
+    left: 1vh;
+    top: 0vh;
+    font-size: 6vh;
+    color: red;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    color: red;
+    z-index: 1111;
+    left: -40vh;
+    top: 0vh;
+    font-size: 6vh;
+    padding: 2vh 4vh;
+    transition: all .5s;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+
+}
+#check:checked ~ label #btn{
+    left: 50vh;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 40vh;
+}
+/*header DOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONE*/
+
+/*fooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooter*/
+.footer{
+    height: 22vh;
+    width: 100%;
+    background-color: #ffd700;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding-top: 8vh;
+
+}
+.footer2{
+
+}
+.footest{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    height: 6vh;
+    color: white;
+}
+.main{
+    border: #ffd700;
+    border-style: solid;
+    margin-left: 4vh;
+    margin-right: 4vh;
+    text-align: center;
+    border-radius: 4vh;
+    background-color: whitesmoke;
+}
+.title{
+    font-size: 4vh;
+    font-weight: bolder;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    
+}
+.bold{
+    font-weight: bolder;
+}
+#imgg{
+    border-radius: 4vh;
+    width: 20vh;
+    
+}
+.nav{
+    display: none;
+}
+.inline{
+    display: none;
+}
+.inline2{
+    display: none;
+}
+li a{
+    color: black;
+}
+.logo{
+    display: none;
+
+}
+
+
+@media (min-width: 1025px){
+    .main2{
+        
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5vh;
+    }
+    .ads{
+
+        border-radius: 4vh;
+        width: 90vh;
+        height: 80vh;
+        margin-left: 4vh;
+        margin-top: 4vh;        
+        background-image: url('banner1.JPG');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main{
+        border: #ffd700;
+        border-style: solid;
+        margin-top: 5vh;
+        margin-left: 4vh;
+        margin-right: 4vh;
+        text-align: center;
+        border-radius: 4vh;
+        background-color: whitesmoke;
+    }
+    .title{
+        font-size: 4vh;
+        font-weight: bolder;
+        margin-bottom: 2vh;
+        margin-top: 4vh;
+        
+    }
+    .texts{
+        font-size: 3vh;
+    }
+    
+    .nav{
+        list-style: none;
+        margin-top: 4vh;
+        float: right;
+        padding-right: 20vh;
+        display: initial;
+        
+    }
+    .inline{
+        display: inline;
+        margin-left: 3vh;
+        margin-right: 3vh;
+        font-size: 3.5vh;
+        display: initial;
+    }
+    .inline2{
+        display: inline;
+        margin-left: 3vh;
+        margin-right: 3vh;
+        font-size: 3.5vh;
+        background-color: #ffd700;
+        padding: 2vh;
+        border-radius: 2vh;
+        visibility: visible; 
+    }
+    
+    .inline:hover{
+        cursor: pointer;
+        padding-left: 0vh;
+        
+    }
+    .inline2:hover{
+        cursor: pointer;
+        color: white;
+    }
+    .burger{
+        display: none;
+    }
+    .logo{
+        height: 20vh;
+        border-radius: 10vh;
+        margin-top: 1vh;
+        margin-left: 5vh;
+        display: initial;
+        
+    }
+    .nav{
+        display: initial;
+    }
+    .inline{
+        display: initial;
+    }
+    .inline2{
+        display: initial;
+    }
+    li a{
+        color: black;
+    }
+    .footer{
+        text-align: center;
+        font-size: 3vh;
+    }
+    .footest{
+        text-align: center;
+        font-size: 3vh;
+    }
+
+
+
+}

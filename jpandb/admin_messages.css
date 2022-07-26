@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+body{
+    
+}
+
+.burger{
+    width: 5vh;
+    border-radius: 4vh;
+    height: 1vh;
+    background-color: black;
+    margin-top: 1vh;
+  }
+
+  .navbar{
+      grid-area: navbar;
+      background-color: white;
+      height: 10vh;
+      grid-area: navbar;
+  }
+
+.sidebar{
+    position: fixed;
+    left: -50vh;
+    width: 50vh;
+    height: 100%;
+    background-color: black;
+    transition: all .5s;
+}
+
+.sidebar header{
+    color: white;
+    text-align: center;
+    user-select: none;
+    font-size: 8vh;
+    background-color: #ffd700;
+}
+
+.sidebar ul a{
+    display: block;
+    font-size: 5vh;
+    padding-top: 4vh;
+    padding-left: 1vh;
+    color: white;
+    border-top: white;
+    transition: .5s;
+}
+
+
+ul li:hover{
+    padding-left: 2vh;
+    
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 4vh;
+}
+label #btn{
+    left: 1vh;
+    top: 0vh;
+    font-size: 6vh;
+    color: red;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    color: red;
+    z-index: 1111;
+    left: -40vh;
+    top: 0vh;
+    font-size: 6vh;
+    padding: 2vh 4vh;
+    transition: all .5s;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+
+}
+#check:checked ~ label #btn{
+    left: 50vh;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 40vh;
+}
+/*header DOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONE*/
+
+.main{
+    height: 100vh;
+    background-color: #ffd700;
+}
+.headeronly{
+    text-align: center;
+}
+.HEADER{
+    font-size: 4vh;
+}
+.tablecontainer{
+    
+}
+
+.list{
+    background-color: white;
+    word-break: break-all;
+    margin: 1vh;
+    font-size: 4vh;
+    padding: 1vh;
+}
+.line{
+    background-color: black;
+    height: .1vh;
+}
+.details{
+    font-size: 3vh;
+    color: gray;
+}

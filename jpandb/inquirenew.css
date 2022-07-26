@@ -1,0 +1,224 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+.container{
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 150vh;
+}
+.burger{
+    width: 5vh;
+    border-radius: 4vh;
+    height: 1vh;
+    background-color: black;
+    margin-top: 1vh;
+  }
+
+  .navbar{
+      grid-area: navbar;
+      background-color: white;
+      height: 10vh;
+      grid-area: navbar;
+  }
+
+.sidebar{
+    position: fixed;
+    left: -50vh;
+    width: 50vh;
+    height: 100%;
+    background-color: black;
+    transition: all .5s;
+}
+
+.sidebar header{
+    color: white;
+    text-align: center;
+    user-select: none;
+    font-size: 8vh;
+    background-color: #ffd700;
+}
+
+.sidebar ul a{
+    display: block;
+    font-size: 5vh;
+    padding-top: 4vh;
+    padding-left: 1vh;
+    color: white;
+    border-top: white;
+    transition: .5s;
+}
+
+ul li:hover{
+    padding-left: 2vh;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 4vh;
+}
+label #btn{
+    left: 1vh;
+    top: 0vh;
+    font-size: 6vh;
+    color: red;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    color: red;
+    z-index: 1111;
+    left: -40vh;
+    top: 0vh;
+    font-size: 6vh;
+    padding: 2vh 4vh;
+    transition: all .5s;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+
+}
+#check:checked ~ label #btn{
+    left: 50vh;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 40vh;
+}
+/*header DOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONE*/
+
+.textf{
+    width: 90%;
+    margin-left: 0vh;
+    margin-top: 4vh;
+    height: 6vh;
+    border-style: none;
+    border-bottom: solid;
+    border-color: gray;
+}
+.select{
+    margin-top: 4vh;
+    margin-left: 1vh;
+    height: 8vh;
+    width: 40vh;
+}
+.submit{
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    height: 10vh;
+    width: 30vh;
+    background-color: #ffd700;
+    border-style: none;
+    border-radius: 2vh;
+    font-size: 4vh;
+    color: black;
+}
+form{
+    text-align: center;
+}
+.submit:hover{
+    cursor: pointer;
+    font-size: 5vh;
+    font-weight: bolder;
+    
+}
+.skipbutton{
+    border-radius: 2vh;
+    font-size: 4vh;
+    border-style: solid;
+    border-color: #ffd700;
+    height: 10vh;
+    padding: 1vh 10vh;
+    color: black;
+}
+.skipbutton:hover{
+    cursor: pointer;
+
+    font-weight: bolder;
+}
+.main2{
+    visibility: hidden;
+}
+.note{
+    font-size: 2vh;
+    color: gray;
+    margin-top: 8vh;
+    text-align: center;
+}
+
+/*fooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooter*/
+.footer{
+    height: 22vh;
+    width: 100%;
+    background-color: #ffd700;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding-top: 8vh;
+
+}
+.footer2{
+
+}
+.footest{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    height: 6vh;
+    color: white;
+}
+
+@media (min-width: 1025px){
+    .main{
+        height: 120vh;
+        
+    }
+    .main2{
+        visibility: visible;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .ads{
+        border-style: solid;
+        border-color: gray;
+        border-radius: 4vh;
+        width: 90vh;
+        height: 80vh;
+        margin-left: 4vh;
+        margin-top: 4vh;        
+        background-image: url('banner1.JPG');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .textf{
+        font-size: 3vh;
+    }
+    .select{
+        font-size: 3vh;
+    }
+    .footer{
+        text-align: center;
+        font-size: 3vh;
+    }
+    .footest{
+        text-align: center;
+        font-size: 3vh;
+    }
+
+}

@@ -1,0 +1,259 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+.container{
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 150vh;
+}
+.burger{
+    width: 5vh;
+    border-radius: 4vh;
+    height: 1vh;
+    background-color: black;
+    margin-top: 1vh;
+  }
+
+  .navbar{
+      grid-area: navbar;
+      background-color: white;
+      height: 10vh;
+      grid-area: navbar;
+  }
+
+.sidebar{
+    position: fixed;
+    left: -50vh;
+    width: 50vh;
+    height: 100%;
+    background-color: black;
+    transition: all .5s;
+}
+
+.sidebar header{
+    color: white;
+    text-align: center;
+    user-select: none;
+    font-size: 8vh;
+    background-color: #ffd700;
+}
+
+.sidebar ul a{
+    display: block;
+    font-size: 5vh;
+    padding-top: 4vh;
+    padding-left: 1vh;
+    color: white;
+    border-top: white;
+    transition: .5s;
+}
+
+ul li:hover{
+    padding-left: 2vh;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    border-radius: 4vh;
+}
+label #btn{
+    left: 1vh;
+    top: 0vh;
+    font-size: 6vh;
+    color: red;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+label #cancel{
+    color: red;
+    z-index: 1111;
+    left: -40vh;
+    top: 0vh;
+    font-size: 6vh;
+    padding: 2vh 4vh;
+    transition: all .5s;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+
+}
+#check:checked ~ label #btn{
+    left: 50vh;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 40vh;
+}
+/*header DOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONE*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90vh 20vh 10vh;
+}
+.ads{
+    display: none;
+}
+
+.main{
+    text-align: center;
+}
+.leftmain{
+    background-color: white;
+
+}
+.b{
+    font-size: 8vh;
+    padding-top: 20vh;
+    font-weight: bolder;
+}
+.inquire{
+    margin-top: 10vh;
+    height: 10vh;
+    width: 30vh;
+    background-color: #ffd700;
+    border-style: none;
+    border-radius: 2vh;
+    font-size: 4vh;
+    color: black;
+    
+}
+.inquire:hover{
+    cursor: pointer;
+    font-size: 5vh;
+    font-weight: bolder;
+    color: white;
+}
+
+/*fooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooter*/
+.footer{
+    height: 22vh;
+    background-color: #ffd700;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5vh;
+    font-size: 3vh;
+}
+.footer2{
+
+}
+.footest{
+    text-align: center;
+    background-color: black;
+    height: 8vh;
+    color: white;
+    font-size: 3vh;
+}
+.nav{
+    display: none;
+}
+.inline{
+    display: none;
+}
+.inline2{
+    display: none;
+}
+li a{
+    color: black;
+}
+.logo{
+    display: none;
+
+}
+
+
+
+
+@media (min-width: 1025px){
+.container{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main2{
+}
+.ads{
+    border-style: solid;
+    border-color: gray;
+    width: 100vh;
+    height: 90vh;
+    border-radius: 2vh;
+    background-image: url(slideshow/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    display: block;
+    
+}
+.nav{
+    list-style: none;
+    margin-top: 4vh;
+    float: right;
+    padding-right: 20vh;
+    display: initial;
+    
+}
+.inline{
+    display: inline;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-size: 3.5vh;
+    display: initial;
+}
+.inline2{
+    display: inline;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-size: 3.5vh;
+    background-color: #ffd700;
+    padding: 2vh;
+    border-radius: 2vh;
+    display: initial;
+}
+
+.inline:hover{
+    cursor: pointer;
+    padding-left: 0vh;
+    
+}
+.inline2:hover{
+    cursor: pointer;
+    color: white;
+}
+.burger{
+    display: none;
+}
+.logo{
+    height: 20vh;
+    border-radius: 10vh;
+    margin-top: 1vh;
+    margin-left: 5vh;
+    display: initial;
+    
+}
+.footer{
+    text-align: center;
+    font-size: 3vh;
+}
+.footest{
+    text-align: center;
+    font-size: 3vh;
+}
+
+
+
+
+}
